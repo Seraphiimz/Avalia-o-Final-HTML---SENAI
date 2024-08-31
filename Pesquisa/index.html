@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Opinião - SENAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="textPrincipal">Pesquisa de Opinião</h1>
+    <p id="textPrincipal">Nessa pesquisa você será questionado sobre o produto X. Esse produto é vendido em todo o país nas
+        perfumarias, lojas de departamento, internet entre outros. Responda as questões abaixo de acordo com sua
+        opinião</p>
+        <p id="titulo">Informações Pessoais</p>
+    <div class="info">
+        <form>
+            <label for="nome"></label>
+            <input type="text" id="nome" name="nome" value="Digite o seu nome"><br>
+            <br>
+
+            <label for="idade"></label>
+            <input type="text" id="idade" name="idade" value="Digite o sua idade"><br>
+            <br>
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" value="Digite o seu email"><br>
+            <br>
+    
+            <label for="datanas">Data de nascimento</label><br>
+            <input type="date" id="datanas" name="datanas"><br>
+            <br>
+
+            <label for="senha">Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
+            <input type="password" id="senha" name="senha" value="senha"><br>
+            <br>
+        </br>
+        </form>
+    </div>
+    <p id="titulo">Aspecto do produto</p>
+    <div class="aspecto">
+        <form>
+            <label for="corProduto">Selecione a cor do produto após 6 meses de uso:</label><br>
+            <input type="color" id="corProduto" name="~corProduto"><br>
+            <br>
+
+            <label for="fotoProduto">Adicione uma foto do seu produto</label><br>
+            <input type="file" id="fotoProduto" name="fotoProduto"><br>
+            <br>
+
+        </form>
+    </div>
+    <p id="titulo">Opinião quanto a utilização</p>
+    <div class="opiniaoUsa">
+        <form>
+            <p>Você gosta do cheiro do produto?</p>
+            <input type="radio" id="gostoMuito" name="gostoPessoal">
+            <label for="gostoMuito">Gosto muito</label><br>
+            <input type="radio" id="gosto" name="gostoPessoal">
+            <label for="gosto">Gosto</label><br>
+            <input type="radio" id="naoSei" name="gostoPessoal">
+            <label for="naoSei">Não sei</label><br>
+            <input type="radio" id="naoGosto" name="gostoPessoal">
+            <label for="naoGosto">Não gosto</label><br>
+            <input type="radio" id="odeio" name="gostoPessoal">
+            <label for="odeio">Odeio</label><br>
+        </form>
+        <form>
+            <p>Marque as características do produto mais gosta</p>
+            <input type="checkbox" id="fixacao" name="produtoGosto">
+            <label for="fixacao">Fixação</label><br>
+            <input type="checkbox" id="textura" name="produtoGosto">
+            <label for="textura">Textura</label><br>
+            <input type="checkbox" id="cheiro" name="produtoGosto">
+            <label for="cheiro">Cheiro</label><br>
+            <input type="checkbox" id="cor" name="produtoGosto">
+            <label for="cor">Cor</label><br>
+            <input type="checkbox" id="embalagem" name="produtoGosto">
+            <label for="embalagem">Embalagem</label><br>
+        </form>
+        <br>
+    </div>
+    <p id="titulo">Nível de satisfação</p>
+    <div class="nivel">
+        <label for="nivelsati">Coloque nessa escala o seu nível de satisfação geral do produto</label><br>
+        <input type="range" id="nivelsati" name="nivela" min="1" max="10" step="5">
+    </div>
+    <p id="titulo">Opiniões</p>
+    <div class="opiniaoCaixa">
+        <p>Digite abaixo sua opinião geral para esse produto</p>
+        <label for="caixa"></label>
+        <textarea id="caixa" name="textoCaixa" rows="7" cols="50"></textarea>
+    </div>
+    <div class="enviar">
+        <br>
+        <button class="botao">Gravar respostas</button>
+    </div>
+</body>
+</html>
